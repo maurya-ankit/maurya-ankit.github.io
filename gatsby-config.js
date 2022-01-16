@@ -4,7 +4,8 @@ module.exports = {
     siteUrl: `https://maurya-ankit.github.io`,
     description: `Ankit Maurya's personal website.`,
     author: `Ankit Maurya`,
-    keywords: [`ankit maurya`, `portfolio`]
+    keywords: [`ankit maurya`, `portfolio`],
+    'google-site-verification': `MysWIXF-YqnH7cUNS1vp5z5Jxot0Ho0CS7NMFhg7s3Q`
   },
   plugins: [
     'gatsby-plugin-postcss',
