@@ -14,6 +14,7 @@ function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
             author
             keywords
             siteUrl
+            gSeo
           }
         }
       }
@@ -68,6 +69,10 @@ function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
                 {
                     name: `twitter:creator`,
                     content: site.siteMetadata.author,
+                },
+                {
+                    name: 'google-site-verification',
+                    content: site.siteMetadata.gSeo,
                 },
                 {
                     name: `twitter:title`,
