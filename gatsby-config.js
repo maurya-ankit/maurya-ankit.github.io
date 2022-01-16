@@ -1,14 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `maurya-ankit.github.io`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Ankit Maurya`,
+    siteUrl: `https://maurya-ankit.github.io`,
+    description: `Ankit Maurya's personal website.`,
+    author: `Ankit Maurya`,
+    keywords: [`ankit maurya`, `portfolio`],
+    'google-site-verification': `MysWIXF-YqnH7cUNS1vp5z5Jxot0Ho0CS7NMFhg7s3Q`
   },
   plugins: [
     'gatsby-plugin-postcss',
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-csp`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
