@@ -7,7 +7,6 @@ const IndexPage = () => {
     <React.Fragment>
       <Helmet>
         <title>Ankit Maurya | Home</title>
-        <meta name="description" content="Home page" />
       </Helmet>
       <div class="flex items-center justify-center h-screen bg-gray-200">
         <div class="container">
