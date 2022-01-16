@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `maurya-ankit.github.io`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Ankit Maurya`,
+    siteUrl: `https://maurya-ankit.github.io`,
+    description: `Ankit Maurya's personal website.`,
+    author: `Ankit Maurya`,
+    keywords: [`ankit maurya`, `portfolio`]
   },
   plugins: [
     'gatsby-plugin-postcss',
