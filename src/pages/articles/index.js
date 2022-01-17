@@ -1,6 +1,7 @@
 import { Link } from 'gatsby'
 import * as React from 'react'
 import Layout from '../../components/Layout'
+import Seo from '../../components/seo'
 const articles = [
     {
         title: 'Reducing cognitive load by theming my tools',
@@ -37,6 +38,7 @@ const ArticleElement = ({ title, date, short, link }) => {
 export default function Article() {
     return (
         <Layout active='/articles'>
+            <Seo title='articles' />
             <div className='container mx-auto px-36 p-8'>
                 <div className='prose'>
 

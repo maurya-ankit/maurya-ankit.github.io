@@ -1,9 +1,11 @@
 import * as React from 'react'
 import Layout from '../../components/Layout'
+import Seo from "../../components/seo";
 
 export default function About() {
     return (
         <Layout active="/about">
+            <Seo title='about' />
             <div className='container mx-auto px-36 p-8 my-24'>
                 <div className='prose'>
                     <h1 className='text-[#ECF8FF] mb-12'>About</h1>
