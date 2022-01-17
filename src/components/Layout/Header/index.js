@@ -2,12 +2,12 @@ import React from "react"
 import { Link } from "gatsby"
 const navElements = [
     {
-        text: 'Articles',
-        link: '/articles',
+        text: 'Home',
+        link: '/',
     },
     {
-        text: 'Snippets',
-        link: '/snippets',
+        text: 'Articles',
+        link: '/articles',
     },
     {
         text: 'About',

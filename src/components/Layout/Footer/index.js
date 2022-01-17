@@ -110,8 +110,8 @@ export default function Footer() {
             </div>
 
             <div class="text-center p-4">
-                © 2021 Copyright:
-                <a class="text-whitehite" href="https://tailwind-elements.com/">Tailwind Elements</a>
+                © 2022 Copyright:
+                <a class="text-whitehite" href="/#">Ankit Maurya</a>
             </div>
         </footer>
     )
