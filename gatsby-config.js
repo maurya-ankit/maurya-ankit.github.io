@@ -11,22 +11,8 @@ module.exports = {
     'gatsby-plugin-postcss',
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
-    {
-      resolve: `gatsby-plugin-sharp`,
-      options: {
-        // Defaults used for gatsbyImageData and StaticImage
-        defaults: {},
-        // Set to false to allow builds to continue on image errors
-        failOnError: true,
-        // deprecated options and their defaults:
-        base64Width: 20,
-        forceBase64Format: `webp`, // valid formats: png,jpg,webp
-        useMozJpeg: process.env.GATSBY_JPEG_ENCODER === `MOZJPEG`,
-        stripMetadata: true,
-        defaultQuality: 50,
-      },
-    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -39,5 +25,60 @@ module.exports = {
         icon: `src/images/icon.png`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `articles`,
+        path: `${__dirname}/src/articles/`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.md`, `.mdx`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            }
+          }
+        ]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `roboto mono`,
+          `muli\:400,400i,700,700i`
+        ],
+        display: `swap`
+      }
+    }
   ]
 }
